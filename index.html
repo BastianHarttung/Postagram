@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="post.js"></script>
+    <script src="darkmode.js"></script>
+</head>
+
+<body id="Body" onload="showPosts()">
+
+    <div id="Newpost-container" class="d-none">
+        <i class="fas fa-times" onclick="closeNewPost()"></i>
+        <input type="text" name="" id="Newpost-name" placeholder="Dein Name">
+        <input type="text" name="" id="Newpost-location" placeholder="Dein Ort">        
+        <textarea name="" id="Newpost-message" cols="30" rows="10" placeholder="Deine Nachricht"></textarea>
+        <i class="far fa-paper-plane color-white" onclick="addPost()"></i>
+    </div>
+
+    <header>
+
+        <div class="header-container">
+
+            <a href="index.html">
+                <img id="Logo" class="logo" src="img/logo-postagram.png" height = "50px" alt="Postagram" title="Postagram">
+            </a>
+
+            <div id="Search-bar" class="search-container d-none">
+                <input type="text" id="Search">
+                <i class="fas fa-search symbol-small" onclick="showSearchPosts()"></i>
+            </div>
+
+            <div class="symbols-header">
+
+                <i class="fas fa-search" onclick="showSearchBar()"></i>
+                <i class="fas fa-plus" onclick="newPost()"></i>
+                <i class="far fa-heart"></i>                
+                <i id="ThemeSwitch" class="far fa-moon" onclick="darkmodeSwitch()"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    
+    
+    <section id="Section">
+
+        <div id="Posts">
+
+        </div>
+
+        <div id="Sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="row">
+
+                    <div class="profile">
+                        <div class="image-profile"><img src="img/logo-basti.jpg" alt=""></div>
+                        <div class="profile-text">
+                            <div class="profile-name">Hartt_aber_Herzlich</div>
+                            <div class="original-name">Bastian Harttung</div>
+                        </div>
+                    </div>
+
+                    <div class="color-blue">Wechseln</div>
+
+                </div>
+                
+                <div class="proposals-row">
+                    <div>Vorschläge für dich</div>
+                    <div>Alle ansehen</div>
+                </div>
+
+                <div class="row">
+                    <div class="profile">
+                        <div class="image-profile"><img src="img/logo-tiergarten.jpg" alt=""></div>
+                        <div class="profile-text">
+                            <div class="profile-name">Tiergarten_Nuernberg</div>
+                            <div class="original-name">Follows you</div>
+                        </div>
+                    </div>
+                    <div class="blue-text color-blue">Abonnieren</div>
+                </div>
+
+                <div class="row">
+                    <div class="profile">
+                        <div class="image-profile"><img src="img/logo-drohne.jpg" alt=""></div>
+                        <div class="profile-text">
+                            <div class="profile-name">Drohnenfotografie</div>
+                            <div class="original-name">Follows you</div>
+                        </div>
+                    </div>
+                    <div class="blue-text color-blue">Abonnieren</div>
+                </div>
+
+                <div class="row">
+                    <div class="profile">
+                        <div class="image-profile"><img src="img/logo-auto.jpg" alt=""></div>
+                        <div class="profile-text">
+                            <div class="profile-name">Autofotografie</div>
+                            <div class="original-name">Hat dich geliked</div>
+                        </div>
+                    </div>
+                    <div class="blue-text color-blue">Abonnieren</div>
+                </div>
+
+                <div class="row">
+                    <div class="profile">
+                        <div class="image-profile"><img src="img/logo-wettbewerb.png" alt=""></div>
+                        <div class="profile-text">
+                            <div class="profile-name">Fotowettbewerbe</div>
+                            <div class="original-name">Könnte dich interessieren</div>
+                        </div>
+                    </div>
+                    <div class="blue-text color-blue">Abonnieren</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="symbols-footer">
+
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <i class="fas fa-search"></i>
+            <i class="far fa-grin-beam"></i>
+
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
